@@ -1,0 +1,24 @@
+{
+  "name": "old-town-log",
+  "description": "Log Module",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "log",
+    "library"
+  ],
+  "minimum-stability": "dev",
+  "homepage": "https://github.com/old-town/old-town-log",
+  "support": {
+    "email": "and-rey2@yandex.ru"
+  },
+  "require": {
+    "php": ">=5.3",
+    "psr/log": "1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OldTown\\Log\\": "src/"
+    }
+  }
+}

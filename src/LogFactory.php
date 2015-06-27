@@ -42,6 +42,9 @@ abstract class LogFactory
      * @param null $param
      *
      * @return LoggerInterface
+     *
+     * @throws \OldTown\Log\Exception\InvalidArgumentException
+     * @throws \OldTown\Log\Exception\DomainException
      */
     public static function getLog($param = null)
     {

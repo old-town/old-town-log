@@ -16,6 +16,18 @@
     "php": ">=5.3",
     "psr/log": "*"
   },
+  "require-dev": {
+    "fabpot/php-cs-fixer": "*@dev",
+    "phpunit/phpunit": "4.7.6",
+    "zendframework/zend-loader": "*",
+    "satooshi/php-coveralls": "0.6.1",
+    "symfony/yaml": "2.1.13",
+    "symfony/console": "~2.3",
+    "symfony/config": "2.1.13",
+    "symfony/dependency-injection": "2.1.13",
+    "symfony/stopwatch": "~2.5",
+    "behat/behat": "2.5.4"
+  },
   "autoload": {
     "psr-4": {
       "OldTown\\Log\\": "src/"

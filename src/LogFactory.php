@@ -120,6 +120,4 @@ abstract class LogFactory
 
         return self::$requiredLoggerMethods;
     }
-
-
 }

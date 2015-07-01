@@ -13,5 +13,4 @@ namespace OldTown\Log\Exception;
 class InvalidArgumentException extends \InvalidArgumentException implements
     ExceptionInterface
 {
-
 }

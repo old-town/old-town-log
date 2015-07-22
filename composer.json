@@ -18,16 +18,17 @@
   },
   "require-dev": {
     "fabpot/php-cs-fixer": "*@dev",
-    "phpunit/phpunit": "4.7.6",
+    "phpunit/phpunit": "*@dev",
     "zendframework/zend-loader": "*",
-    "satooshi/php-coveralls": "0.6.1",
-    "symfony/yaml": "2.1.13",
-    "symfony/console": "~2.3",
-    "symfony/config": "2.1.13",
-    "symfony/dependency-injection": "2.1.13",
-    "symfony/stopwatch": "~2.5",
-    "behat/behat": "2.5.4"
+    "satooshi/php-coveralls": "dev-master",
+    "behat/behat": "*@dev"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:onema/php-coveralls.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "OldTown\\Log\\": "src/"

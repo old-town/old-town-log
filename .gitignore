@@ -21,4 +21,5 @@ extras/documentation
 .idea
 
 .php_cs.cache
+phpunit.xml
 

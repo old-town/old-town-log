@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit
-        bootstrap="./test/Bootstrap.php"
+        bootstrap="./test/phpunit/Bootstrap.php"
         colors="true"
         convertErrorsToExceptions="true"
         convertNoticesToExceptions="true"
@@ -10,14 +10,21 @@
         processIsolation="false"
         backupGlobals="false"
         syntaxCheck="true"
-        >
+>
     <testsuites>
-        <testsuite name="PropertySet Tests">
-            <directory>./test</directory>
+        <testsuite name="Workflow Log">
+            <directory>./test/phpunit/tests</directory>
         </testsuite>
     </testsuites>
 
+    <filter>
+        <blacklist>
+            <directory>./vendor</directory>
+            <directory>./test</directory>
+        </blacklist>
+    </filter>
     <logging>
-        <log type="coverage-clover" target="./.reports/clover.xml"/>
+        <log type="coverage-php" target="./build/logs/coverage/coverage-phpunit.cov"/>
     </logging>
+
 </phpunit>

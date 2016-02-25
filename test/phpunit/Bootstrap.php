@@ -3,7 +3,7 @@
  * @link https://github.com/old-town/old-town-log
  * @author  Malofeykin Andrey  <and-rey2@yandex.ru>
  */
-namespace OldTown\Log;
+namespace OldTown\Log\PhpUnit\Test;
 
 use Zend\Loader\AutoloaderFactory;
 use Zend\Loader\StandardAutoloader;
@@ -40,24 +40,15 @@ class Bootstrap
     protected static function initAutoloader()
     {
         $vendorPath = static::findParentPath('vendor');
-
-        $loader = null;
         if (is_readable($vendorPath . '/autoload.php')) {
-            $loader = include $vendorPath . '/autoload.php';
+
+            /** @noinspection PhpIncludeInspection */
+            include $vendorPath . '/autoload.php';
         }
 
         if (!class_exists(AutoloaderFactory::class)) {
-            $zf2Path = getenv('ZF2_PATH') ?: (defined('ZF2_PATH') ? constant('ZF2_PATH') : (is_dir($vendorPath . '/ZF2/library') ? $vendorPath . '/ZF2/library' : false));
-
-            if (!$zf2Path) {
-                throw new RuntimeException('Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.');
-            }
-
-            if (null !== $loader) {
-                $loader->add('Zend', $zf2Path . '/Zend');
-            } else {
-                include $zf2Path . '/Zend/Loader/AutoloaderFactory.php';
-            }
+            $errMsg = 'Ошибка инициации автолоадеров';
+            throw new RuntimeException($errMsg);
         }
 
         try {
@@ -65,8 +56,8 @@ class Bootstrap
                 StandardAutoloader::class => [
                     'autoregister_zf' => true,
                     'namespaces' => [
-                        'OldTown\PropertySet' => __DIR__ . '/../src/',
-                        __NAMESPACE__ => __DIR__
+                        'OldTown\\Log' => include __DIR__ . '/../../src',
+                        __NAMESPACE__ => __DIR__ . '/tests/'
                     ]
                 ]
             ]);

@@ -13,8 +13,8 @@
     "email": "and-rey2@yandex.ru"
   },
   "require": {
-    "php": ">=5.3",
-    "psr/log": "*"
+    "php": ">=5.5",
+    "psr/log": "~1"
   },
   "require-dev": {
     "fabpot/php-cs-fixer": "~1.11",

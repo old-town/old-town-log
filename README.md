@@ -1,13 +1,15 @@
 # old-town-log
-Логирование
 
-# Log
 Master:
+
 [![Build Status](https://secure.travis-ci.org/old-town/old-town-log.svg?branch=dev)](https://secure.travis-ci.org/old-town/old-town-log)
 [![Coverage Status](https://coveralls.io/repos/old-town/old-town-log/badge.svg?branch=dev)](https://coveralls.io/r/old-town/old-town-log?branch=dev)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/old-town/old-town-log/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/old-town/old-town-log/?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/old-town-log/badge/?version=master)](http://old-town-log.readthedocs.org/ru/latest/?badge=master)
+
 Develop:
+
+
 [![Build Status](https://secure.travis-ci.org/old-town/old-town-log.svg?branch=dev)](https://secure.travis-ci.org/old-town/old-town-log)
 [![Coverage Status](https://coveralls.io/repos/old-town/old-town-log/badge.svg?branch=dev)](https://coveralls.io/r/old-town/old-town-log?branch=dev)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/old-town/old-town-log/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/old-town/old-town-log/?branch=dev)

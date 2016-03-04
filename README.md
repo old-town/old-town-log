@@ -15,6 +15,8 @@ Develop:
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/old-town/old-town-log/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/old-town/old-town-log/?branch=dev)
 [![Documentation Status](https://readthedocs.org/projects/old-town-log/badge/?version=dev)](http://old-town-log.readthedocs.org/ru/latest/?badge=dev)
 
+# Описание
+
 Компонент, являющиейся фабрикой для создания логеров в прилоежние.
 
 Обсуждение проблем https://github.com/old-town/old-town-log/issues
